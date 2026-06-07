@@ -1,6 +1,6 @@
 # Stock Market Analyzer
 
-> **7 DSA algorithms applied on real Google (GOOGL) stock data built in C++**
+**DSA algorithms applied on real Google (GOOGL) stock data built in C++**
 
 ## What Is This Project?
 
@@ -19,7 +19,14 @@ Every algorithm answers a **real financial question.**
 | 3 | **Moore's Voting** | Was the market mostly bullish or bearish? | O(n) O(1) space |
 | 4 | **Two Pointer Pair Sum** | Which two days can be used for hedging? | O(n log n) |
 | 5 | **Container With Most Water** | What is the maximum revenue window? | O(n) |
-| 6 | **Product Except Self** | Which day was riskiest to miss? | O(n) |
+| 6 | **Binary Exponentiation** | How much would $1000 grow via compounding? | O(log n) |
+| 7 | **Product Except Self** | Which day was riskiest to miss? | O(n) |
+
+---
+
+
+---
+
 ## How To Run
 
 **Step 1 — Clone the repo**
@@ -49,9 +56,12 @@ Report is saved to `GOOGL_Report.txt` in the same folder.
 
 - **Greedy Algorithm** — Stock Buy & Sell tracks minimum price in one pass
 - **Dynamic Programming** — Kadane's builds on previous subproblem
+- **Divide & Conquer** — Binary Exponentiation halves the problem each step
 - **Two Pointer Technique** — Pair Sum and Max Water use opposite end pointers
 - **Prefix + Suffix Arrays** — Product Except Self builds two passes
 - **Voting Algorithm** — Moore's finds majority trend in O(1) space
+
+---
 
 ## Why This Project?
 
@@ -59,13 +69,18 @@ Report is saved to `GOOGL_Report.txt` in the same folder.
 > *"Where do these algorithms actually show up in the real world?"*
 > This project is my proof of that connection.
 
+---
+
 ## Tech Stack
 
 - **Language** → C++ (g++ compiler)
 - **Data Source** → Yahoo Finance (GOOGL historical data)
 - **Libraries** → STL only (no external dependencies)
 
+---
+
 ## Author
 
 **Dnyaneshwari Mahajan**
-B.S. Data Science — IIT Madras
+- B.S. Data Science — IIT Madras
+- M.Sc. Mathematics
