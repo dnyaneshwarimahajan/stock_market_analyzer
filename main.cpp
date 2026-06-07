@@ -88,7 +88,7 @@ int main() {
 
 
     WRITE("__________________________________________________________________________\n")
-    WRITE(" [6]Riskiest Day To Miss\n")
+    WRITE(" [7]Riskiest Day To Miss\n")
     ProductResult r = riskiestDay(prices);
     WRITE("  Riskiest Day : " << data[r.idx].date << "  ($" << prices[r.idx] << ")\n\n")
 
