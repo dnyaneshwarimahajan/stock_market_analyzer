@@ -33,5 +33,6 @@ SubarrayResult kadane(std::vector<double> prices);
 ProfitResult bestProfit(std::vector<double> prices);
 std::pair<int,int> pairSum     (std::vector<double> prices, double target);
 std::string mooreTrend  (std::vector<double> prices);
+double              binaryExpo  (double base, int exp);
 WaterResult maxWater    (std::vector<double> prices);
 ProductResult       riskiestDay (std::vector<double> prices);

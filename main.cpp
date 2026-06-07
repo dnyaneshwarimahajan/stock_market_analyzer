@@ -76,6 +76,16 @@ int main() {
     WRITE("  Right Date : " << data[w.rightIdx].date << "  ($" << prices[w.rightIdx] << ")\n")
     WRITE("  Window Span : " << (w.rightIdx - w.leftIdx) << " days\n\n")
 
+    WRITE("____________________________________________________________________\n")
+    WRITE(" [6] BINARY EXPONENTIATION - Compound Growth\n")
+    double totalReturn = prices.back() / prices.front();
+    double dailyRate   = pow(totalReturn, 1.0 / n) - 1.0;
+    double invested    = 1000.0;
+    double finalValue  = invested * binaryExpo(1.0 + dailyRate, n);
+    WRITE("  Invested : $" << invested   << "\n")
+    WRITE("  Daily Rate : " << (dailyRate * 100.0) << "%\n")
+    WRITE("  Final Value : $" << finalValue << "\n\n")
+
 
     WRITE("__________________________________________________________________________\n")
     WRITE(" [6]Riskiest Day To Miss\n")
@@ -89,6 +99,7 @@ int main() {
     WRITE("  Best Sell : " << data[p.sellIdx].date << "$" << prices[p.sellIdx] << "\n")
     WRITE("  Max Profit : $" << p.maxProfit << "\n")
     WRITE("  Market Trend : " << trend << "\n")
+    WRITE("  $1000 Grew To: $" << finalValue << "\n")
     WRITE("***********************************************************************\n")
     
     std::cout << "\nReport saved to GOOGL_Report.txt" << std::endl;

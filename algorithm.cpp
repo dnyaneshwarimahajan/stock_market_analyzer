@@ -160,8 +160,25 @@ WaterResult maxWater(std::vector<double> prices) {
 
     return { best, bestL, bestR };
 }
+//6.Binary
+double binaryExpo(double base, int exp) {
 
-// 6. PRODUCT EXCEPT SELF
+    double result = 1.0;
+
+    while (exp > 0) {
+
+        // odd exponent → multiply result by base
+        if (exp % 2 == 1)
+            result *= base;
+
+        base *= base;  // square the base
+        exp  /= 2;     // halve the exponent
+    }
+
+    return result;
+}
+
+// 7. PRODUCT EXCEPT SELF
 // Find the riskiest day to miss
 
 ProductResult riskiestDay(std::vector<double> prices) {
